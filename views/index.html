@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Gym-Finder - Find new gym to train!</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/sym/css/font-awesome.min.css">
+</head>
+<body>
+
+<header ng-include="'./partials/navigation.html'"></header>
+
+<div ui-view></div>
+
+
+<!--angular-->
+
+<script src="./javascripts/jquery.js"></script>
+<script src="./javascripts/angular.min.js"></script>
+<script src="./javascripts/angular-ui-router.min.js"></script>
+<script src="./javascripts/bootstrap.min.js"></script>
+<script src="./javascripts/ui-bootstrap.js"></script>
+<script src="./gymAppAngular/app.js"></script>
+<script src="./gymAppAngular/controllers/mainCtrl.js"></script>
+<script src="./gymAppAngular/controllers/advancedSearchCtrl.js"></script>
+<script src="./gymAppAngular/controllers/adminCtrl.js"></script>
+<script src="./gymAppAngular/controllers/gymsCtrl.js"></script>
+<script src="./gymAppAngular/controllers/aboutCtrl.js"></script>
+<script src="./gymAppAngular/controllers/homeCtrl.js"></script>
+<script src="./gymAppAngular/controllers/adminMenuCtrl.js"></script>
+<script src="./gymAppAngular/controllers/newsCtrl.js"></script>
+<script src="./gymAppAngular/controllers/chatCtrl.js"></script>
+
+
+
+
+<script src="./gymAppAngular/services/getGym.js"></script>
+<script src="./gymAppAngular/services/adminService.js"></script>
+<script src="./gymAppAngular/services/gymsAdminService.js"></script>
+<script src="./gymAppAngular/services/newsService.js"></script>
+
+
+<script src="./javascripts/ng-map.min.js"></script>
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyANvlVDXs4jqFOsihZnjKjprKnkiuYaKoE"></script>
+<script type="text/javascript">
+    google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+</script>
+
+
+
+</body>
+</html>

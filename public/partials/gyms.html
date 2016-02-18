@@ -1,0 +1,66 @@
+
+<center>
+    <div ng-if="gyms.length == 0 || gyms == false" style="margin-top: 50px;">
+        <span style="font-size: 50px; color: #204d74; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+"> לא נמצאו תוצאות לחיפוש שלך</span>
+    </div>
+
+    <div ng-repeat="gym in gyms track by $index">
+        <div id="gymContainer">
+
+            <div id="googleMap"> <ng-map zoom="11" center={{gym.coordinates}}>
+                <marker position={{gym.coordinates}} />
+                <shape name="circle" radius="400" center={{gym.coordinates}} radius="4000" />
+                <control name="overviewMap" opened="true" />
+            </ng-map>`
+            </div>
+
+            <div class="form-group gymDes">Gym Name   
+                <input ng-model="gym.name" type="text" class="form-control" readonly>
+            </div>
+
+            <div class="form-group gymDes">Price   
+                <input ng-model="gym.price" type="text" class="form-control" readonly>
+            </div>
+
+            <div class="form-group gymDes">
+                <u>More Info:</u> {{ gym.city + ", " + gym.street  + " " + gym.houseNumber + " street" }}
+                <br>
+                <u>Website:</u> <a ng-href="{{gym.website}}">Click here</a> <br>
+                <u>Lessons:</u>&nbsp;&nbsp;<span ng-repeat="gym in  gym.gymLessons track by $index ">{{ gym["name"] + ", " }}</span>  <br>
+                <u>Products:</u>  &nbsp;&nbsp;<span ng-repeat="gym in  gym.gymProducts track by $index ">{{ gym["name"] + ", " }}</span>
+            </div>
+        </div>
+    </div>
+</center>
+
+<script>
+    console.log("mapFunc");
+    function initMap(){
+        console.log("mapFunc222");
+        var map = new google.maps.Map(document.getElementById("googleMap"), {
+            zoom: 8,
+            center: {lat: -34.397, lng: 150.644}
+        });
+        var geocoder = new google.maps.Geocoder();
+        geocodeAddress(geocoder, map);
+    }
+
+    function geocodeAddress(geocoder, resultsMap) {
+        /*           var address = document.getElementById('address').value; */
+        var address = 'rishon lezion';
+
+        geocoder.geocode({'address': address}, function(results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                resultsMap.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: resultsMap,
+                    position: results[0].geometry.location
+                });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+</script>
+</center>

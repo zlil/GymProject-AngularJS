@@ -1,0 +1,14 @@
+
+
+
+<div class="searchBox" style=" color: white ; font-size: 20px; direction: rtl;height:600px;">
+    <center> <button ng-click="getNews()" class="btn btn-default" style="color: #0f0f0f;margin:20px 0 30px 0;font-size:18px;font-weight: bold;">Double Click for News by Ynet</button>   </center>
+
+    <li ng-repeat="child in newsFeed track by $index">
+        <a href={{child.link}}>
+
+            {{child.title}}
+        </a>
+    </li>
+
+</div>

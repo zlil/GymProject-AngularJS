@@ -1,0 +1,38 @@
+<div class="grid_10 omega">
+    <div style="background:#f1f1f1; height:100%;margin-top: -7px;">
+			<span style="display:block;padding-top:6px;">
+				<div style="background:#dddddd;">
+                    <div id='status' style='width:50px;'>#</div>
+                    <div id='detailsTitle' style="text-align:left;">Title</div>
+                </div>
+				<div id='border'></div>
+
+
+                <div ng-repeat="course in gymsCourse track by $index">
+                    <div id='status'>
+						<span class="fa-stack fa-lg" style="font-size:15px;">
+						   <i class="fa fa-heart" style="color:#111;padding-top:6px;"></i>
+						</span>
+                    </div>
+                    
+                    <div id='detailsTitle' style="text-align:left;">{{course["name"]}}</div>
+                    <div id='editRemove'>
+                        <a href='' style='color:#111'>
+								<span class="fa-stack fa-lg" style="font-size:15px;">
+								  <i class="fa fa-circle fa-stack-2x" style="color:#ddd;"></i>
+								  <i class="fa fa-edit fa-stack-1x" style="color:#555;"></i>
+								</span>
+                        </a>
+                        <a href="" style='color:#111'>
+								<span class="fa-stack fa-lg" style="font-size:15px;">
+								  <i class="fa fa-circle fa-stack-2x" style="color:#ddd;"></i>
+								  <i class="fa fa-trash-o fa-stack-1x" style="color:#555;"></i>
+								</span>
+                        </a>
+                    </div>
+                    <div id='borderLine'></div>
+
+                </div>
+            </span>
+    </div>
+</div>

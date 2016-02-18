@@ -1,0 +1,95 @@
+<div class="grid_10 omega">
+    <div style="background:#f1f1f1; height:100%;margin-top: -7px;">
+			<span style="display:block;padding-top:6px;">
+				<div style="background:#dddddd;">
+                    <div id='status' style='width:50px;'>#</div>
+                    <div id='detailsTitle' style="text-align:left;">Create New Gym</div>
+                </div>
+				<div id='border'></div>
+
+
+                <div style="height: 700px;">
+                    <form name='createGym' ng-controller="adminMenuCtrl" ng-submit="addGym()" >
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym Name:</b>
+                            <input ng-model="gymname" type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym City:</b>
+                            <input ng-model="gymcity" type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym Street:</b>
+                            <input ng-model="gymstreet" type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym House Number:</b>
+                            <input ng-model="gymhouseNum" type="text" class="form-control" id="pwd">
+                        </div>
+
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates on Map:</b>
+                            <input ng-model="gymcoor" type="text" class="form-control" id="pwd"> Example: please enter: [30.000, 41,000]
+                        </div>
+
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym Price:</b>
+                            <input ng-model="gymprice" type="text" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym WebSite:</b>
+                            <input ng-model="gymwebsite" type="text" class="form-control" id="pwd">
+                        </div>
+
+                        <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym Products:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
+                        <div ng-repeat="pro in gymsPRO track by $index" style="display:inline-block"></br>
+                            <label class="checkbox-inline"><input ng-model="models[$index]" type="checkbox" value="">{{pro.name}}</label>
+                        </div>
+                        </br></br></br></br></br>
+                        <b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym Course:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
+                        <div ng-repeat="course in gymsCourse track by $index" style="display:inline-block"></br>
+                            <label class="checkbox-inline"><input ng-model="courseModels[$index]" type="checkbox" value="">{{course.name}}</label>
+                        </div>
+
+                        </br></br></br></br></br></br></br></br></br>
+                        <center>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                         </center>
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </span>
+    </div>
+</div>
+
+<!--
+</br></br></br></br></br>
+<b style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gym Course :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
+<label class="checkbox-inline"><input ng-model="Yoga" type="checkbox" value="">Yoga</label>
+<label class="checkbox-inline"><input ng-model="Trx" type="checkbox" value="">Trx</label>
+<label class="checkbox-inline"><input ng-model="Pilatis" type="checkbox" value="">Pilatis</label>
+<label class="checkbox-inline"><input ng-model="Kickboxercise" type="checkbox" value="">Kickboxercise</label>
+<label class="checkbox-inline"><input ng-model="Dance" type="checkbox" value="">Dance</label>
+<label class="checkbox-inline"><input ng-model="StepClasses" type="checkbox" value="">StepClasses</label>
+<label class="checkbox-inline"><input ng-model="Cardio" type="checkbox" value="">Cardio</label>
+<label class="checkbox-inline"><input ng-model="Zumba" type="checkbox" value="">Zumba</label>
+-->
+
+
+<!--<label class="checkbox-inline"><input ng-model="Amino" type="checkbox" value="">Amino</label>
+<label class="checkbox-inline"><input ng-model="Shaker"     type="checkbox" value="">Shaker</label>
+<label class="checkbox-inline"><input ng-model="Protain"    type="checkbox" value="">Protain</label>
+<label class="checkbox-inline"><input ng-model="BCCA"       type="checkbox" value="">BCCA</label>
+<label class="checkbox-inline"><input ng-model="BodyOil"    type="checkbox" value="">BodyOil</label>
+<label class="checkbox-inline"><input ng-model="CardioWatch" type="checkbox" value="">CardioWatch</label>
+<label class="checkbox-inline"><input ng-model="HeartMonitor" type="checkbox" value="">HeartMonitor</label>
+-->

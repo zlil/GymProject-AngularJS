@@ -1,0 +1,288 @@
+/* ----- Custom fonts ----- */
+@font-face {
+  font-family: 'geoma_regular';
+  src: url('../fonts/geoma_regular_demo-webfont.eot');
+  src: url('../fonts/geoma_regular_demo-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/geoma_regular_demo-webfont.woff2') format('woff2'),
+  url('../fonts/geoma_regular_demo-webfont.woff') format('woff'),
+  url('../fonts/geoma_regular_demo-webfont.ttf') format('truetype'),
+  url('../fonts/geoma_regular_demo-webfont.svg#geoma_regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body{
+  background-image:url('../images/lockeRoom.jpg');
+  background-size:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  margin:0;
+
+}
+
+
+.box{
+  width: 300px;
+  height: 50px;
+  padding-top: 11%;
+  z-index: -1;
+}
+
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #FFFFFF;
+  border: double;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+  color: #65737e;
+
+}
+
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;
+
+}
+
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;
+
+}
+
+.container-1 input#search:-ms-input-placeholder {
+  color: #65737e;
+
+}
+
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  border-color: #CF5C3F;
+
+}
+
+.navBar{
+  font-size: 18px;
+  background-color: #333;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navBar ul{
+  float: right;
+  margin: 0;
+  padding: 4px;
+}
+
+
+.navBar ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.navBar ul li  a {
+  color: #aaa;
+  background-color:#333333;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 2.5em;
+  text-decoration: none;
+}
+
+.navBar ul li  a:hover{
+  border-color: #CF5C3F;
+  background-color: white;
+  color: #000305;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.main{
+
+
+}
+
+header {
+  border-bottom: 3px solid #ffffff;
+}
+
+.navBar {
+  border-radius: 0px;
+}
+
+.navBar .leftLogo {
+  float: left;
+  margin-left: 30px;
+  margin-top: 5px;
+  font-family: geoma_regular;
+  color: #ffffff;
+  font-size: 34px;
+  text-shadow: 5px 3px #000;
+}
+
+
+
+footer {
+  width:100%;
+  border-top: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: #5e5e5e;
+  height: 40px;
+  font-size: 17px;
+  padding-top: 5px;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.column {
+  float: left;
+  text-align:center;
+  margin: 0 20px 0 0;
+  width: 400px;
+}
+
+
+section {
+  float: left;
+  width: 63%;
+  font-size: 15px;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+
+
+.technology {
+  width: 110px;
+  height: 40px;
+  background: #04909d;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  float: left;
+  margin-left:10px;
+  border-radius: 10px 10px;
+  padding: 4px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+  padding-top: 7px;
+}
+
+.technology:hover {
+  width: 135px;
+}
+
+.transitionsDiv {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+
+
+.searchBox {
+  font-family: 'OpenHebrew', sans-serif;
+  width:500px;
+  height:330px;
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+  margin: auto;
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+
+.advancedSearchForm {
+  padding-top:5px;
+}
+
+
+.advancedSearchInputs {
+  float:left;
+  display: block;
+  margin-left:20px;
+  margin-top: 20px;
+  color:white;
+}
+
+.adminBox {
+  font-family: 'OpenHebrew', sans-serif;
+  width:500px;
+  height:200px;
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+  margin: auto;
+  margin-top:100px;
+  margin-bottom: 100px;"
+}
+
+
+
+.aboutDiv {
+  height:700px;
+  font-family: geoma_regular;
+  font-size: 16px;
+  color: white;
+}
+
+
+/*################# GYMS #################*/
+#gymContainer{
+  width:500px;
+  height:350px;
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+  margin-top:100px;
+  text-align: left;
+}
+
+
+.gymDes{
+  margin-top: 7px;
+  float:left;
+  display: block;
+  margin-left:20px;
+  color:white;
+  font-size: 15px;
+  width:232px;
+}
+
+#googleMap{
+  width:220px;
+  height: 190px;
+  background-color: red;
+  float: right;
+  margin: 10px;
+}
+
+#gymLogo{
+  width:220px;
+  height: 85px;
+  background-color: blue;
+  float: right;
+  margin: 10px;
+}
+

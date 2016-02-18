@@ -1,0 +1,18 @@
+<div class="grid_10 omega">
+
+</div>
+
+<div class="grid_10 omega">
+    <div style="background:#f1f1f1; height:100%;margin-top: -7px;">
+			<span style="display:block;padding-top:6px;">
+				<div style="background:#dddddd;">
+                    <div id='status' style='width:50px;'>#</div>
+                    <div id='detailsTitle' style="text-align:left;">Gyms By City, Group by query</div>
+                </div>
+				<div id='border'></div>
+                <div ng-repeat="city in gymsGroupByCity track by $index">
+                    <h3 style="margin-left:25px"> {{ city["_id"] + " : " + city["count"] }}</h3>
+                </div>
+            </span>
+    </div>
+</div>

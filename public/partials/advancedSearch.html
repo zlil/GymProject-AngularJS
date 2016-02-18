@@ -1,0 +1,51 @@
+
+<div class="main">
+    <div class="searchBox">
+        <span style="font-size: 20px; text-align: center; padding-left: 150px; color: #FFFFFF;"> Search Your Gym! </span>
+        <form class="form-inline advancedSearchForm" name='advenceSearch'  ng-submit="searchGym()">
+
+            <div class="form-group advancedSearchInputs">
+                <span style="font-size:16px; font-weight: bold; margin-right: -2px;"> Name</span>                
+                <input ng-model="name" type="text" class="form-control" name='gymName' placeholder="Enter Gym Name" style="width:380px;">
+            </div>
+
+            <div class="form-group advancedSearchInputs">
+                <span style="font-size:16px; font-weight: bold; margin-right: 10px;"> City </span>                
+                <input ng-model="city" type="text" class="form-control" placeholder="Enter City Name" name='gymCity' style="width:380px;">
+            </div>
+
+
+            <div class="form-group advancedSearchInputs">
+                <span style="font-size:16px; font-weight: bold; margin-right: -10px;">Lesson</span>                
+                <input ng-model="test" type="text" class="form-control" placeholder="Enter Lesson Name" name='gymLesson1' style="width:380px;">
+            </div>
+
+            <!--<div class="form-group advancedSearchInputs">-->
+                <!--<span style="font-size:16px; font-weight: bold;  margin-right: -18px;">Product</span>                -->
+                <!--<input ng-model="comment" type="text" class="form-control" placeholder="Enter Product" name='gymProduct' style="width:380px;">-->
+            <!--</div>-->
+
+            <input type="submit" value="Search" class="btn btn-primary" style="width:480px;margin-top: 35px;height: 30px;margin-left: 7px;" />
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!--<div class="searchBox" style=" color: white ; font-size: 20px; direction: rtl; ">
+   <center> <button ng-click="rssfeed()" style="color: #0f0f0f;">Click for News by Ynet</button>   </center>
+
+    <li ng-repeat="child in newsFeed">
+        <a href={{child.link}}>
+
+            {{child.title}}
+        </a>
+    </li>
+
+</div>-->
+
+
+
